@@ -213,12 +213,24 @@ bytes
 
 ## 第一阶段
 
-- [ ] `docs/PRIOR_ART.md`；
+- [x] `docs/PRIOR_ART.md`；
 - [ ] `docs/MODEL.md`：byte/text domain + transformation + loss taxonomy；
 - [ ] UTF-8 ↔ Windows-1252/Latin-1 类 mojibake demo；
 - [ ] U+FFFD irreversible-loss demo；
 - [ ] double-mojibake trace；
 - [ ] GitHub Pages 静态展示。
+
+## AI 施工入口
+
+本仓库已经把后续工作整理成可连续执行的 agent 契约，不需要每轮重新规划：
+
+- [`AGENTS.md`](AGENTS.md)：任何 coding agent 必须遵守的执行、架构、测试与停止条件；
+- [`IMPLEMENTATION_PLAN.md`](IMPLEMENTATION_PLAN.md)：从工程初始化到所有核心展品、Pages 部署和最终验证的完整施工顺序；
+- [`PROMPT.md`](PROMPT.md)：可直接复制给有仓库写权限 AI 的一段总指令；
+- [`ROADMAP.md`](ROADMAP.md)：项目层面的里程碑与研究方向；
+- [`docs/PRIOR_ART.md`](docs/PRIOR_ART.md)：已有标准、工具与明确不重复的工作。
+
+对 AI 的默认要求是：**读取上述文件后直接实现最早的未完成依赖安全任务，测试、构建、提交，然后继续；不要只生成新的计划。**
 
 ## 项目原则
 
